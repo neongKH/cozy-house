@@ -1,0 +1,68 @@
+
+// GLOBAL STYLES
+@import "global/custom-variables";
+
+@import "global/functions";
+@import "global/variables";
+@import "global/mixins";
+@import "global/reboot";
+@import "global/type";
+@import "global/grid";
+@import "global/forms";
+@import "global/buttons";
+@import "global/utilities";
+@import "global/fonts";
+@import "global/tabs";
+
+// PLUGINS STYLE
+@import "plugins/icons";
+@import "plugins/slick";
+
+// BLOCKS STYLE
+@import "blocks/popup-block";
+@import "blocks/page-header";
+@import "blocks/main-banner";
+@import "blocks/about-us";
+@import "blocks/our-friends";
+@import "blocks/help-methods";
+@import "blocks/donation-block";
+
+@import "blocks/page-footer";
+
+body {
+	position: relative;
+	background-color: #fff;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	
+	font-family: $font-family;
+	color: #545454;
+	font-weight: 400;
+	line-height: 1.2;
+	font-size: 16px;
+	min-width: 320px;
+	&.scrolled {
+		.page-header {
+			background-color: #fff;
+			position: fixed;
+			box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+			&__row {
+				padding-top: 15px;
+				padding-bottom: 15px;
+			}
+			&__logo-text {
+				color: #545454;
+			}
+			&__nav-item {
+				a {
+					color: #545454;
+				}
+			}
+		}
+	}
+}
+
+
+
+

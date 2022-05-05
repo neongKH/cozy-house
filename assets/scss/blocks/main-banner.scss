@@ -1,0 +1,26 @@
+.main-banner {
+    padding-top: 360px;
+    padding-bottom: 260px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    &__content {
+        max-width: 445px;
+        width: 100%;
+
+    }
+
+    &__content-title {
+        color: #fff;
+    }
+
+    &__content-text {
+        margin-bottom: 40px;
+        font-size: 15px;
+        line-height: 24px;
+        color: #cdcdcd;
+    }
+
+    
+
+}

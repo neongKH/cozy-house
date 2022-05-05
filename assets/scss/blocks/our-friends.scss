@@ -1,0 +1,113 @@
+.our-friends {
+    padding-top: 80px;
+    padding-bottom: 70px;
+    background-color: #f6f6f6;
+    &__title {
+        margin-bottom: 65px;
+        text-align: center;
+    }
+
+
+    &__item {
+        width: 270px;
+        background-color: #fafafa;
+        border-radius: 9px;
+        text-align: center;
+        transition: all 0.2s ease-in-out;
+        flex-shrink: 0;
+
+        padding-bottom: 35px;
+
+        margin-right: 25px;
+        margin-left: 25px;
+        &:hover {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+        }
+    }
+
+    &__item-img {
+        margin-bottom: 30px;
+        width: 100%;
+        height: 270px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__item-content {
+        text-align: center;
+    }
+
+    &__item-title {
+        font-size: 20px;
+        line-height: 35px;
+        font-family: $font-family-georgia;
+        margin-bottom: 25px;
+    }
+
+    &__slider {
+        display: flex;
+        max-width: 980px;
+        margin: 0 auto;
+        margin-bottom: 65px;
+        .slick-track {
+            padding-bottom: 13px;
+            padding-top: 13px;
+        }
+        &:not(.slick-initialized) {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            overflow: hidden;
+            > * {
+                flex-shrink: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    &__slider-arrow {
+        position: absolute;
+        top: 50%;
+        left: -80px;
+
+        transform: translateY(-50%);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        width: 50px;
+        height: 50px;
+
+        background-color: transparent;
+        border: 2px solid $brand-color;
+        &.next {
+            left: auto;
+            right: -80px;
+            transform: translateY(-50%) rotate(180deg);
+        }
+        &::before {
+            content: "";
+            width: 15px;
+            height: 7px;
+            background-image: url(../img/long-arrow.png);
+            background-size: 100% auto;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translateX(-50%) translateY(-50%);
+        }
+        &:hover {
+            background-color: $brand-color;
+        }
+    }
+
+    &__bottom-btn {
+        display: flex;
+        justify-content: center;
+    }
+}

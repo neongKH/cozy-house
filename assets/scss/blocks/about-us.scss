@@ -1,0 +1,32 @@
+.about-us {
+    padding-top: 85px;
+    padding-bottom: 85px;
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__img {
+        width: 300px;
+        height: auto;
+        flex-shrink: 0;
+        margin-right: 115px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__content {
+        max-width: 415px;
+    }
+    &__content-title {
+        color: #545454;
+    }
+    &__content-text {
+        color: #4c4c4c;
+        margin-bottom: 30px;
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
