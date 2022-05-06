@@ -335,7 +335,7 @@ $(document).ready(function() {
 });
 
 $(window).on('scroll load orientationchange', function() {
-	var scrolledHeight = 400;
+	var scrolledHeight = 100;
 
 	if ($(this).scrollTop() > scrolledHeight && !($('body').hasClass("scrolled")) ) {
 		$('body').addClass("scrolled");

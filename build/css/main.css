@@ -3959,7 +3959,7 @@ input[type="radio"].visually-hidden {
 .page-header {
   background-color: transparent;
   color: #fff;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -3973,7 +3973,8 @@ input[type="radio"].visually-hidden {
         justify-content: space-between;
     -ms-flex-align: center;
         align-items: center;
-    padding-top: 60px; }
+    padding-top: 60px;
+    transition: all 0.2s ease-in-out; }
   .page-header__logo-title {
     font-size: 32px;
     line-height: 38px;
